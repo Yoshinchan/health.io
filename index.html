@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7f0">
+  <meta name="description" content="Learn about Dr. Sagar Joshi's physiotherapy practice and enquire about consultations.">
+  <title>Dr. Sagar Joshi | Physiotherapy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home">
+      <span class="brand-icon">+</span>
+      <span>
+        <strong>Dr. Sagar Joshi</strong>
+        <small>PHYSIOTHERAPY</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation"
+      aria-expanded="false" aria-controls="navigation">
+      ☰
+    </button>
+
+    <nav id="navigation" class="navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">PHYSIOTHERAPY & WELLBEING</span>
+        <h1>Move with confidence. Live with <em>comfort.</em></h1>
+        <p>
+          Discover the practice of Dr. Sagar Joshi.
+          Get in touch to enquire about physiotherapy consultations
+          and learn more about the care available.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">
+            Enquire about a consultation ↗
+          </a>
+          <a class="text-link" href="#about">Meet the practitioner</a>
+        </div>
+        <div class="trust-note">
+          <span class="trust-symbol">✓</span>
+          Professional information and enquiries in one place
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="image-placeholder">
+          <span class="placeholder-symbol">✳</span>
+          <p>Practitioner or clinic photograph</p>
+          <small>Replace with a client-approved image</small>
+        </div>
+        <div class="visual-caption">
+          <span class="caption-icon">✳</span>
+          <span>
+            <strong>Your journey, your goals</strong>
+            <small>Start with an enquiry</small>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <span class="eyebrow">WELCOME</span>
+      <h2>Care that starts with <em>listening.</em></h2>
+      <p>
+        Every person has different needs and goals.
+        Contact the practice to learn about the physiotherapy
+        services offered and discuss whether an appointment
+        may be appropriate for you.
+      </p>
+      <a class="text-link" href="#contact">Get in touch →</a>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE PRACTICE</span>
+          <h2>How can we <em>help?</em></h2>
+        </div>
+        <p>
+          Contact the practice to confirm available treatments,
+          appointment arrangements and suitability for your needs.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-number">01</span>
+          <h3>Physiotherapy consultations</h3>
+          <p>Ask about assessment appointments and the services available.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-number">02</span>
+          <h3>Personal care approach</h3>
+          <p>Learn how the practitioner works with patients towards their goals.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-number">03</span>
+          <h3>Appointment enquiries</h3>
+          <p>Get in touch to ask about availability, location and next steps.</p>
+        </article>
+      </div>
+      <p class="disclaimer">
+        Services and treatment availability must be confirmed by the practice.
+      </p>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-copy">
+        <span class="eyebrow">LET'S CONNECT</span>
+        <h2>Take the first step <em>today.</em></h2>
+        <p>
+          Have a question about consultations? Send an email enquiry
+          to the practice. Please do not include confidential medical
+          details in your initial message.
+        </p>
+        <a class="contact-email" href="mailto:sagarjoshi@gmail.com">
+          sagarjoshi@gmail.com
+        </a>
+        <p class="contact-detail">
+          <strong>Practice location</strong><br>
+          Larkhall area, ML9 2UQ, United Kingdom
+        </p>
+        <p class="contact-detail">
+          <strong>Clinic telephone</strong><br>
+          To be confirmed before launch
+        </p>
+      </div>
+
+      <form id="enquiry-form" class="contact-form">
+        <h3>Send an enquiry</h3>
+        <p class="form-note">
+          This form opens an email draft in your email application.
+        </p>
+
+        <label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name"
+          required maxlength="100" placeholder="Enter your name">
+
+        <label for="email">Your email address</label>
+        <input id="email" name="email" type="email"
+          autocomplete="email" required maxlength="254"
+          placeholder="you@example.com">
+
+        <label for="subject">What is your enquiry about?</label>
+        <select id="subject" name="subject" required>
+          <option value="">Choose a topic</option>
+          <option value="Consultation enquiry">Consultation enquiry</option>
+          <option value="Appointment availability">Appointment availability</option>
+          <option value="Practice information">Practice information</option>
+          <option value="Other enquiry">Other enquiry</option>
+        </select>
+
+        <label class="consent">
+          <input type="checkbox" required>
+          <span>I understand this form opens an email draft and
+            does not directly submit a booking.</span>
+        </label>
+
+        <button class="button button-primary form-button" type="submit">
+          Prepare email enquiry ↗
+        </button>
+        <p class="form-note">
+          Please do not send medical records or sensitive health information
+          through this initial enquiry form.
+        </p>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-icon">+</span>
+      <span>
+        <strong>Dr. Sagar Joshi</strong>
+        <small>PHYSIOTHERAPY</small>
+      </span>
+    </a>
+    <p>Professional information and consultation enquiries.</p>
+    <span>© <span id="year"></span> Practice website</span>
+  </footer>
+</body>
+</html>
